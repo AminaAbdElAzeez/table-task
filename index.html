@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Task</title>
+    <style>
+        table {
+            width: 600px;
+            height: 400px;
+            margin: 60px auto;
+            text-align: center;
+            border: 1px solid #Ccc;
+            border-spacing: 0;
+        }
+
+        th {
+            width: 100px;
+            height: 40px;
+            color: #fff;
+            padding: 15px;
+            background-color: #009688;
+            border:1px solid #2cb6a8;
+        }
+
+        td {
+            padding: 15px;
+            background-color: #eee;
+            border: 1px solid #e2e2e2;
+        }
+
+        @media (max-width:1199px) {
+            table {
+            width: 100vw;
+            margin: auto;
+        }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Study</th>
+            <th>Address</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Salma</td>
+                <td>25</td>
+                <td>CS</td>
+                <td rowspan="4">Cairo</td>
+                <td>Married</td>
+            </tr>
+            <tr>
+                <td>Sammar</td>
+                <td>24</td>
+                <td>Alsun</td>
+                <td rowspan="3">Single</td>
+            </tr>
+            <tr>
+                <td>Shimaa</td>
+                <td rowspan="2">26</td>
+                <td rowspan="2">Pharmacy</td>
+            </tr>
+            <tr>
+                <td>Amira</td>
+            </tr>
+            <tr>
+                <td>Alaa</td>
+                <td>24</td>
+                <td>Commerce</td>
+                <td>Tanta</td>
+                <td>Married</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Table Task</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
